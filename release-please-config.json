@@ -1,6 +1,15 @@
 {
+  "release-type": "go",
+  "include-component-in-tag": true,
+  "include-v-in-tag": true,
+  "separate-pull-requests": true,
+  "tag-separator": "/",
   "packages": {
-    ".": {}
-  },
-  "release-type": "go"
+    "aws/eks": {
+      "component": "aws/eks"
+    },
+    "container": {
+      "component": "container"
+    }
+  }
 }
