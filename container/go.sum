@@ -1,5 +1,7 @@
 github.com/bodgit/nri-plugin-runtime v0.0.1 h1:mC28aALqBJI/wlO0YmH/kqvByUEATvXzOB4ypzNitDQ=
 github.com/bodgit/nri-plugin-runtime v0.0.1/go.mod h1:K99pejYd91cMZl1BmMdEtFul1kSJ17Z+Km3N+Nkv3ss=
+github.com/bodgit/nri-plugin-runtime v0.0.2 h1:6w2a9e6ZU431nuPSBeXYrpLSBYzSBw6XcAbbN93J5es=
+github.com/bodgit/nri-plugin-runtime v0.0.2/go.mod h1:7xJ3MN6rJ1ickSIkP4kU13vJ4Yl3su5DQIFwiQivr2Y=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/go-logr/logr v1.2.2/go.mod h1:jdQByPbusPIv2/zmleS9BjJVeZ6kBagPoEUsqbVz/1A=
