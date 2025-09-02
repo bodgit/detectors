@@ -4,7 +4,7 @@ go 1.24.0
 
 require (
 	github.com/bodgit/nri-plugin-runtime v0.0.2
-	github.com/stretchr/testify v1.10.0
+	github.com/stretchr/testify v1.11.1
 	go.opentelemetry.io/otel v1.37.0
 	go.opentelemetry.io/otel/sdk v1.37.0
 )

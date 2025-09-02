@@ -8,7 +8,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/eks v1.73.1
 	github.com/aws/aws-sdk-go-v2/service/sts v1.38.2
 	github.com/aws/smithy-go v1.23.0
-	github.com/stretchr/testify v1.10.0
+	github.com/stretchr/testify v1.11.1
 	go.opentelemetry.io/otel v1.37.0
 	go.opentelemetry.io/otel/sdk v1.37.0
 	k8s.io/client-go v0.34.0
