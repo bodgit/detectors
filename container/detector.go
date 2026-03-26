@@ -1,3 +1,5 @@
+// Package container provides an OpenTelemetry detector for detecting
+// container-level attributes.
 package container
 
 import (
