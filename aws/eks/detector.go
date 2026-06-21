@@ -17,7 +17,7 @@ import (
 	"github.com/aws/smithy-go"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/sdk/resource"
-	semconv "go.opentelemetry.io/otel/semconv/v1.34.0"
+	semconv "go.opentelemetry.io/otel/semconv/v1.41.0"
 	"k8s.io/client-go/rest"
 )
 

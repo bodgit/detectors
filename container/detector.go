@@ -9,7 +9,7 @@ import (
 	"github.com/bodgit/nri-plugin-runtime/pkg/runtime"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/sdk/resource"
-	semconv "go.opentelemetry.io/otel/semconv/v1.34.0"
+	semconv "go.opentelemetry.io/otel/semconv/v1.41.0"
 )
 
 type detectorUtils interface {
@@ -27,14 +27,28 @@ type resourceDetector struct {
 }
 
 func (detector *resourceDetector) Detect(_ context.Context) (*resource.Resource, error) {
-	attributes := make([]attribute.KeyValue, 0, 2)
+	attributes := make([]attribute.KeyValue, 0, 3)
 
-	if containerID, _ := detector.utils.lookupEnv(runtime.ContainerIDEnv); containerID != "" {
-		attributes = append(attributes, semconv.ContainerID(containerID))
-	}
-
-	if containerRuntime, _ := detector.utils.lookupEnv(runtime.ContainerRuntimeNameEnv); containerRuntime != "" {
-		attributes = append(attributes, semconv.ContainerRuntime(containerRuntime))
+	for _, s := range []struct {
+		env string
+		fn  func(string) attribute.KeyValue
+	}{
+		{
+			runtime.ContainerIDEnv,
+			semconv.ContainerID,
+		},
+		{
+			runtime.ContainerRuntimeNameEnv,
+			semconv.ContainerRuntimeName,
+		},
+		{
+			runtime.ContainerRuntimeVersionEnv,
+			semconv.ContainerRuntimeVersion,
+		},
+	} {
+		if v, _ := detector.utils.lookupEnv(s.env); v != "" {
+			attributes = append(attributes, s.fn(v))
+		}
 	}
 
 	if len(attributes) == 0 {
