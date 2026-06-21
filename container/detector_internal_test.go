@@ -26,8 +26,8 @@ func TestContainer(t *testing.T) {
 	t.Parallel()
 
 	utils := new(mockDetectorUtils)
-	utils.On("lookupEnv", runtime.ContainerIDName).Return("abc123", true).Once()
-	utils.On("lookupEnv", runtime.ContainerRuntimeName).Return("containerd", true).Once()
+	utils.On("lookupEnv", runtime.ContainerIDEnv).Return("abc123", true).Once()
+	utils.On("lookupEnv", runtime.ContainerRuntimeNameEnv).Return("containerd", true).Once()
 
 	containerResourceDetector := resourceDetector{utils: utils}
 

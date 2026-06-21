@@ -29,11 +29,11 @@ type resourceDetector struct {
 func (detector *resourceDetector) Detect(_ context.Context) (*resource.Resource, error) {
 	attributes := make([]attribute.KeyValue, 0, 2)
 
-	if containerID, _ := detector.utils.lookupEnv(runtime.ContainerIDName); containerID != "" {
+	if containerID, _ := detector.utils.lookupEnv(runtime.ContainerIDEnv); containerID != "" {
 		attributes = append(attributes, semconv.ContainerID(containerID))
 	}
 
-	if containerRuntime, _ := detector.utils.lookupEnv(runtime.ContainerRuntimeName); containerRuntime != "" {
+	if containerRuntime, _ := detector.utils.lookupEnv(runtime.ContainerRuntimeNameEnv); containerRuntime != "" {
 		attributes = append(attributes, semconv.ContainerRuntime(containerRuntime))
 	}
 

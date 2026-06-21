@@ -2,6 +2,8 @@ github.com/bodgit/nri-plugin-runtime v0.0.1 h1:mC28aALqBJI/wlO0YmH/kqvByUEATvXzO
 github.com/bodgit/nri-plugin-runtime v0.0.1/go.mod h1:K99pejYd91cMZl1BmMdEtFul1kSJ17Z+Km3N+Nkv3ss=
 github.com/bodgit/nri-plugin-runtime v0.0.2 h1:6w2a9e6ZU431nuPSBeXYrpLSBYzSBw6XcAbbN93J5es=
 github.com/bodgit/nri-plugin-runtime v0.0.2/go.mod h1:7xJ3MN6rJ1ickSIkP4kU13vJ4Yl3su5DQIFwiQivr2Y=
+github.com/bodgit/nri-plugin-runtime v0.0.3 h1:bFVje3z0F9cVU3pSocxyFDFlcchsNh1N4SdyXk4LGsU=
+github.com/bodgit/nri-plugin-runtime v0.0.3/go.mod h1:x2mYqllfZO4r/N3WsqrDZllXm4jvpv+Qp4Rbiwhowoo=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/go-logr/logr v1.2.2/go.mod h1:jdQByPbusPIv2/zmleS9BjJVeZ6kBagPoEUsqbVz/1A=
@@ -39,6 +41,8 @@ go.opentelemetry.io/otel/trace v1.37.0 h1:HLdcFNbRQBE2imdSEgm/kwqmQj1Or1l/7bW6mx
 go.opentelemetry.io/otel/trace v1.37.0/go.mod h1:TlgrlQ+PtQO5XFerSPUYG0JSgGyryXewPGyayAWSBS0=
 golang.org/x/sys v0.33.0 h1:q3i8TbbEz+JRD9ywIRlyRAQbM0qF7hu24q3teo2hbuw=
 golang.org/x/sys v0.33.0/go.mod h1:BJP2sWEmIv4KK5OTEluFJCKSidICx8ciO85XgH3Ak8k=
+golang.org/x/sys v0.39.0 h1:CvCKL8MeisomCi6qNZ+wbb0DN9E5AATixKsvNtMoMFk=
+golang.org/x/sys v0.39.0/go.mod h1:OgkHotnGiDImocRcuBABYBEXf8A9a87e/uXjp9XT3ks=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c h1:Hei/4ADfdWqJk1ZMxUNpqntNwaWcugrBjAiHlqqRiVk=
 gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c/go.mod h1:JHkPIbrfpd72SG/EVd6muEfDQjcINNoR0C8j2r3qZ4Q=
