@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/sdk/resource"
-	semconv "go.opentelemetry.io/otel/semconv/v1.34.0"
+	semconv "go.opentelemetry.io/otel/semconv/v1.41.0"
 )
 
 type mockDetectorUtils struct {
@@ -28,6 +28,7 @@ func TestContainer(t *testing.T) {
 	utils := new(mockDetectorUtils)
 	utils.On("lookupEnv", runtime.ContainerIDEnv).Return("abc123", true).Once()
 	utils.On("lookupEnv", runtime.ContainerRuntimeNameEnv).Return("containerd", true).Once()
+	utils.On("lookupEnv", runtime.ContainerRuntimeVersionEnv).Return("2.0.0", true).Once()
 
 	containerResourceDetector := resourceDetector{utils: utils}
 
@@ -35,7 +36,8 @@ func TestContainer(t *testing.T) {
 	require.NoError(t, err)
 	assert.Equal(t, resource.NewWithAttributes(semconv.SchemaURL, []attribute.KeyValue{
 		semconv.ContainerID("abc123"),
-		semconv.ContainerRuntime("containerd"),
+		semconv.ContainerRuntimeName("containerd"),
+		semconv.ContainerRuntimeVersion("2.0.0"),
 	}...), r)
 
 	utils.AssertExpectations(t)
@@ -45,7 +47,7 @@ func TestNoPlugin(t *testing.T) {
 	t.Parallel()
 
 	utils := new(mockDetectorUtils)
-	utils.On("lookupEnv", mock.Anything).Return("", false).Twice()
+	utils.On("lookupEnv", mock.Anything).Return("", false)
 
 	containerResourceDetector := resourceDetector{utils: utils}
 
