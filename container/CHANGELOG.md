@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.4](https://github.com/bodgit/detectors/compare/container/v0.0.3...container/v0.0.4) (2026-10-06)
+
+
+### Bug Fixes
+
+* **deps:** update opentelemetry-go monorepo to v1.47.0 ([#34](https://github.com/bodgit/detectors/issues/34)) ([766e317](https://github.com/bodgit/detectors/commit/766e31708157a96615bf92956070f4ac04012a14))
+
 ## [0.0.3](https://github.com/bodgit/detectors/compare/container/v0.0.2...container/v0.0.3) (2026-06-21)
 
 
