@@ -9,7 +9,7 @@ import (
 	"github.com/bodgit/nri-plugin-runtime/pkg/runtime"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/sdk/resource"
-	semconv "go.opentelemetry.io/otel/semconv/v1.42.0"
+	semconv "go.opentelemetry.io/otel/semconv/v1.43.0"
 )
 
 type detectorUtils interface {
