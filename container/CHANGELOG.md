@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.5](https://github.com/bodgit/detectors/compare/container/v0.0.4...container/v0.0.5) (2026-10-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency go.opentelemetry.io/otel/semconv to v1.42.0 ([#38](https://github.com/bodgit/detectors/issues/38)) ([623493c](https://github.com/bodgit/detectors/commit/623493c083038da80eafc7861626aba912ac0839))
+
 ## [0.0.4](https://github.com/bodgit/detectors/compare/container/v0.0.3...container/v0.0.4) (2026-10-06)
 
 
