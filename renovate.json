@@ -2,5 +2,30 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Update OpenTelemetry semantic convention package imports",
+      "managerFilePatterns": [
+        "/\\.go$/"
+      ],
+      "matchStrings": [
+        "\"go\\.opentelemetry\\.io/otel/semconv/(?<currentValue>v\\d+\\.\\d+\\.\\d+)\""
+      ],
+      "depNameTemplate": "go.opentelemetry.io/otel/semconv",
+      "packageNameTemplate": "open-telemetry/semantic-conventions",
+      "datasourceTemplate": "github-tags",
+      "versioningTemplate": "semver"
+    }
+  ],
+  "packageRules": [
+    {
+      "matchDepNames": [
+        "go.opentelemetry.io/otel/semconv"
+      ],
+      "semanticCommitType": "fix",
+      "separateMultipleMinor": true
+    }
   ]
 }
