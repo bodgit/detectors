@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.6](https://github.com/bodgit/detectors/compare/aws/eks/v0.0.5...aws/eks/v0.0.6) (2026-10-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency go.opentelemetry.io/otel/semconv to v1.43.0 ([#42](https://github.com/bodgit/detectors/issues/42)) ([e1ec247](https://github.com/bodgit/detectors/commit/e1ec247a653742254f73d3ef8f41ebfdee208d2b))
+
 ## [0.0.5](https://github.com/bodgit/detectors/compare/aws/eks/v0.0.4...aws/eks/v0.0.5) (2026-10-06)
 
 
