@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.0.4](https://github.com/bodgit/detectors/compare/aws/eks/v0.0.3...aws/eks/v0.0.4) (2026-10-06)
+
+
+### Bug Fixes
+
+* **deps:** update aws-sdk-go-v2 monorepo ([#32](https://github.com/bodgit/detectors/issues/32)) ([250c4bf](https://github.com/bodgit/detectors/commit/250c4bfa62c09eb472b3c824e6ccccd4acecfbcc))
+* **deps:** update module github.com/aws/smithy-go to v1.28.2 ([#31](https://github.com/bodgit/detectors/issues/31)) ([85dbb58](https://github.com/bodgit/detectors/commit/85dbb58194a2bb5031290df9b4a14fd0b6d8420d))
+* **deps:** update module k8s.io/client-go to v0.37.1 ([#33](https://github.com/bodgit/detectors/issues/33)) ([2087009](https://github.com/bodgit/detectors/commit/2087009f3bbf7174ebf33466c5c2705c469a6e16))
+* **deps:** update opentelemetry-go monorepo to v1.47.0 ([#34](https://github.com/bodgit/detectors/issues/34)) ([766e317](https://github.com/bodgit/detectors/commit/766e31708157a96615bf92956070f4ac04012a14))
+
 ## [0.0.3](https://github.com/bodgit/detectors/compare/aws/eks/v0.0.2...aws/eks/v0.0.3) (2026-06-21)
 
 
